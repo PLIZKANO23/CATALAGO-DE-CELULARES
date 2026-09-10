@@ -1,0 +1,53 @@
+/* Aplicar fuente general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9fc;
+}
+
+/* Colores personalizados según requerimiento */
+:root {
+    --color-pink: #f78fb3;
+    --color-yellow: #f7d794;
+}
+
+/* Clases de utilidad para fondos y botones personalizados */
+.bg-custom-pink {
+    background-color: var(--color-pink) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--color-pink), var(--color-yellow));
+}
+
+.btn-custom-yellow {
+    background-color: var(--color-yellow);
+    border: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-yellow:hover {
+    background-color: #f3c66b;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* Estilos de las tarjetas de productos */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+    background-color: #f1f1f1;
+}
